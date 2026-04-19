@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<title>ROBOT</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MENU BUTTON (3 gạch) -->
+<button class="menu-btn" id="menuToggle">
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</button>
+
+<!-- MENU PANEL (chỉ có nút Thoát) -->
+<div class="menu-panel" id="menuPanel">
+    <button class="menu-item" onclick="window.location.href='key.php'">
+        <i class="fas fa-power-off"></i>
+        Thoát
+    </button>
+</div>
+
+<!-- ROBOT 1 (luôn hiện - GIỐNG CODE GỐC) -->
+<div class="draggable-box" id="dragBox1">
+    <button class="close-btn" onclick='hideRobot(1)'>×</button>
+    
+    <div class="robot-container">
+        <img src="https://i.postimg.cc/1zLnNsCZ/IMG-3575.gif" class="robot-avatar">
+    </div>
+
+    <div class="prediction-box">
+        <div id="line1">#phiên : -- – Dự đoán : --</div>
+        <div id="line2">Độ tin cậy : --%</div>
+    </div>
+</div>
+
+<!-- GAME -->
+<iframe src="https://68gbvn88.bar/"></iframe>
+
+<script src="script.js"></script>
+</body>
+</html>
